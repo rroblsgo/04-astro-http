@@ -9,9 +9,10 @@ import tailwindcss from '@tailwindcss/vite';
 import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 
+// import node from '@astrojs/node';
 import cloudflare from '@astrojs/cloudflare';
 
-// import node from '@astrojs/node';
+import db from '@astrojs/db';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -19,11 +20,12 @@ const __dirname = dirname(__filename);
 // https://astro.build/config
 export default defineConfig({
   site: 'https://04-astro-http-5ny.pages.dev/',
-  integrations: [mdx(), sitemap()],
+  integrations: [mdx(), sitemap(), db()],
 
   // adapter: node({
   //   mode: 'standalone',
   // }),
+
   vite: {
     plugins: [tailwindcss()],
     resolve: {
