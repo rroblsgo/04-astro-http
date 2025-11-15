@@ -18,7 +18,7 @@ const __dirname = dirname(__filename);
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://04-astro-http-5ny.pages.dev/',
   integrations: [mdx(), sitemap()],
 
   // adapter: node({
