@@ -32,6 +32,10 @@ export default defineConfig({
       alias: {
         '@': resolve(__dirname, './src'),
       },
+      conditions: ['node', 'import', 'module', 'browser', 'default'],
+    },
+    ssr: {
+      noExternal: ['picocolors'],
     },
   },
 
