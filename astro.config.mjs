@@ -4,7 +4,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
 
-import tailwindcss from '@tailwindcss/vite';
+// import tailwindcss from '@tailwindcss/vite';
 
 import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
@@ -27,16 +27,16 @@ export default defineConfig({
   // }),
 
   vite: {
-    plugins: [tailwindcss()],
+    // plugins: [tailwindcss()],
     resolve: {
       alias: {
         '@': resolve(__dirname, './src'),
       },
-      conditions: ['node', 'import', 'module', 'browser', 'default'],
+      // conditions: ['node', 'import', 'module', 'browser', 'default'],
     },
-    ssr: {
-      noExternal: ['picocolors'],
-    },
+    // ssr: {
+    //   noExternal: ['picocolors'],
+    // },
   },
 
   adapter: cloudflare(),
