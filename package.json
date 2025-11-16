@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "dev:remote": "astro dev --remote",
-    "build": "astro build --remote",
+    "build": "bun --bun run astro build --remote",
     "preview": "astro preview",
     "astro": "astro"
   },
