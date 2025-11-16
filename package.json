@@ -19,11 +19,5 @@
     "@tailwindcss/vite": "^4.1.17",
     "astro": "^5.15.7",
     "tailwindcss": "^4.1.17"
-  },
-  "overrides": {
-    "picocolors": "^1.0.1"
-  },
-  "trustedDependencies": [
-    "astro"
-  ]
+  }
 }
