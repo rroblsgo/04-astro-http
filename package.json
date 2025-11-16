@@ -22,5 +22,8 @@
   },
   "resolutions": {
     "picocolors": "^1.1.0"
-  }
+  },
+  "trustedDependencies": [
+    "astro"
+  ]
 }
