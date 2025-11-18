@@ -14,13 +14,15 @@ import cloudflare from '@astrojs/cloudflare';
 
 import db from '@astrojs/db';
 
+import vue from '@astrojs/vue';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://04-astro-http-5ny.pages.dev/',
-  integrations: [mdx(), sitemap(), db()],
+  integrations: [mdx(), sitemap(), db(), vue()],
 
   // adapter: node({
   //   mode: 'standalone',
